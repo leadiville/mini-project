@@ -28,52 +28,52 @@ const SignUp = () => {
 
     return (
        <>
-        <p class="content is-small p-0 m-0 ml-2">Already have an account? <Link to="/register/login">Sign in</Link></p>
-        <div class="columns is-vcentered is-gapless mobile">
-            <div class="column" style={{backgroundColor:"white"}}>
-                <div class="container" style={{ maxWidth:"300px"}}>
-                    <div class="block mb-6">
-                        <p class="title is-small">Sprint Work Sample</p>
-                        <p class="content is-small">
+        <p className="content is-small p-0 m-0 ml-2">Already have an account? <Link to="/register/login">Sign in</Link></p>
+        <div className="columns is-vcentered is-gapless mobile">
+            <div className="column" style={{backgroundColor:"white"}}>
+                <div className="container" style={{ maxWidth:"300px"}}>
+                    <div className="block mb-6">
+                        <p className="title is-small">Sprint Work Sample</p>
+                        <p className="content is-small">
                         Get your projects done quickly with no delays</p>
                     </div>
                     <form onSubmit={onSubmit} >
-                        <div class="field">
-                            <label class="label">Email</label>
-                            <div class="control">
-                                <input class="input is-small" type="email" 
+                        <div className="field">
+                            <label className="label">Email</label>
+                            <div className="control">
+                                <input className="input is-small" type="email" 
                                     placeholder="choose username" name="emailV" required/>
                                 </div>
                         </div>
                         <div class='field'>
-                            <label htmlFor="password" class="label">Password</label>
-                            <div class="control">
-                                <input class="input is-small" type="password"
+                            <label htmlFor="password" className="label">Password</label>
+                            <div className="control">
+                                <input className="input is-small" type="password"
                                     placeholder="choose password" name="passwordV" required />
                             </div>
-                            {passAlert && <span class="content is-small"><p className="email-warning-danger">{alert.password}
+                            {passAlert && <span className="content is-small"><p className="email-warning-danger">{alert.password}
                             </p></span>}
                         </div>
                     
                         <div class='field mb-3'>
-                            <div class="control">
+                            <div className="control">
                                 {<Link to="/"><button class='button is-link'>sign up</button></Link>}
                             </div>
                         </div>
-                        {/* <div class="field">
-                            <div class="control">
-                                <button class="button has-icon-left is-active mt-4" style={{width:'100%'}}>
-                                    <i class="icon is-left">{<FaGoogle />}</i>
-                                    <span class="content is-small">Sign up with google</span>
+                        {/* <div className="field">
+                            <div className="control">
+                                <button className="button has-icon-left is-active mt-4" style={{width:'100%'}}>
+                                    <i className="icon is-left">{<FaGoogle />}</i>
+                                    <span className="content is-small">Sign up with google</span>
                                 </button>
                             </div>
                         </div> */}
                     </form>
                 </div>
             </div>    
-            <div class="column" style={{height:"768px", backgroundColor:"blue", flexDirection:"column", display:"flex", justifyContent:"center"}}>
-                <div class="content mt-2">
-                    <h1 class="title is-capitalized" style={{width:"130px", color:"white", lineHeight:"2.5em", marginLeft:"auto", marginRight:"auto"}}>get sprints done quickly</h1>
+            <div className="column" style={{height:"768px", backgroundColor:"blue", flexDirection:"column", display:"flex", justifyContent:"center"}}>
+                <div className="content mt-2">
+                    <h1 className="title is-capitalized" style={{width:"130px", color:"white", lineHeight:"2.5em", marginLeft:"auto", marginRight:"auto"}}>get sprints done quickly</h1>
                 </div>
             </div>
         </div>

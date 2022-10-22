@@ -24,14 +24,20 @@ code {
   width: 80px;
   height: 30px;
 }
-.email-warning {
-  color: var(--primary-color)
+.default {
+  color: skyblue;
 }
-.email-warning-danger {
+.done {
+  color: var(--success-color)
+}
+.in-progress {
   color: var(--danger-color)
 }
-.email-warning-success {
-  color: var(--success-color)
+.not-finished {
+  background-color: var(--danger-color)
+}
+.finished {
+  background-color: var(--success-color)
 }
 .nav-icons {
   width: 25px;
