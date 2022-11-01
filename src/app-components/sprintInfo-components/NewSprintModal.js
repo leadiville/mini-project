@@ -1,7 +1,7 @@
 import { FaTimes } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import ModalForm from "./sprintFormModal";
-import { closeSprintModal, displaySprints } from "../../store/appSlice";
+import { closeSprintModal } from "../../store/appSlice";
 
 export  const NewSprintModal = ({ handleChange, handleSubmit }) => {
 

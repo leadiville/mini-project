@@ -1,7 +1,6 @@
 
 import { createSlice } from "@reduxjs/toolkit";
-import { FaAcquisitionsIncorporated } from "react-icons/fa";
-
+ 
 export const modalSlice = createSlice({
     name: 'toggle-modal',
     initialState: {
@@ -47,7 +46,7 @@ export const displaySelectedInfo = createSlice({
             state.viewSprints = true;
         },
         displayNoSprints(state) {
-            state.viewSprints = false 
+            state.viewSprints = false
         },
         displayEngineers(state) {
             state.viewEngineers = true;

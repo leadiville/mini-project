@@ -10,9 +10,7 @@ import { NewSprintModal } from "./app-components/sprintInfo-components/NewSprint
 import { ModalEngForm } from "./app-components/engineers-info/modalEngForm";
 import PageNotFound from "./app pages/PageNotFound";
 
-
 const App = () => {
-
 
     const addSprintBtn = useSelector((state) => state.toggleModal.sprintModal)
     const addEngBtn = useSelector((state) => state.toggleModal.engineerModal)
@@ -21,7 +19,7 @@ const App = () => {
     const [engInput, setEngInput] = useState({})
     const [allEngineers, setAllEngineers] = useState(getStoredEng)
     const dispatch = useDispatch()
-
+    
 
     function getStoredSprint() {
         const storedSprint = localStorage.getItem("allSprints")
@@ -84,7 +82,7 @@ const App = () => {
             {addSprintBtn && <NewSprintModal handleChange={handleSprintInputChange} handleSubmit={submitSprintForm} />}
             {addEngBtn && <ModalEngForm handleChange={handleEngInputChange} handleSubmit={submitEngForm} />}
             <Routes>
-                <Route path="/" element={<AppLayout engineers={allEngineers} sprints={allSprints} delSprint={delSprint} handleDel={delEngineer}
+                <Route path="/" element={<AppLayout engineers={allEngineers} sprints={allSprints} delSprint={delSprint} handleDel={delEngineer} 
                 />} />
                 <Route path="/register" >
                     <Route index element={<SignUp />} />
@@ -96,3 +94,4 @@ const App = () => {
     )
 }
 export default App;
+
